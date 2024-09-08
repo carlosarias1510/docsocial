@@ -1,0 +1,166 @@
+/* style.css */
+
+/* Importa la fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif; /* Cambiado a Poppins */
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #004080; /* Color azul oscuro */
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #b3d1ff !important; /* Color azul claro al pasar el mouse */
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+}
+
+footer h5 {
+    color: #004080; /* Color azul oscuro */
+}
+
+footer .text-dark:hover {
+    color: #0059b3; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #004080;
+    border-color: #004080;
+}
+
+.btn-primary:hover {
+    background-color: #0059b3;
+    border-color: #0059b3;
+}
+
+/* Forms */
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    box-shadow: none;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #004080;
+}
+
+/* Custom Tweet Box */
+.tweet {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tweet h5 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #004080;
+}
+
+.tweet p {
+    margin-bottom: 10px;
+}
+
+.tweet small {
+    color: #777777;
+}
+
+/* Profile Page */
+.profile-header {
+    background-color: #004080;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.profile-header h2 {
+    margin: 0;
+}
+
+.profile-header p {
+    margin: 5px 0 0 0;
+}
+
+/* Notification Badge */
+.navbar .badge {
+    background-color: #ff4d4d; /* Color rojo para notificaciones */
+    font-size: 0.8rem;
+    padding: 5px 10px;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f0f2f5;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #004080;
+    border-radius: 10px;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .profile-header {
+        text-align: left;
+    }
+}
+
+/* Timeline (Tweets) */
+.tweet {
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;  /* Añade un borde para visualizar el contenedor */
+}
+
+.tweet h5 {
+    font-weight: bold;
+    color: #004080;
+    margin-bottom: 5px;
+}
+
+.tweet p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.tweet small {
+    color: #777777;
+}
